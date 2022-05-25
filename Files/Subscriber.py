@@ -1,6 +1,7 @@
 import paho.mqtt.client as mqtt
 from random import randrange, uniform
 import time 
+
 topic = "Public Chat"
 def on_message(client, userdata, message):
     print(f"Received Message: {str(message.payload.decode('utf-8'))} ")

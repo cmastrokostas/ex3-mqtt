@@ -5,8 +5,12 @@ import requests
 from datetime import datetime
 
 def httpPost(username):
-    pload = {'username': username, 'message':input("Message:"), 'datetime':datetime.now().strftime("%d/%m/%Y %H:%M:%S")} #Format time
-    r = requests.post('https://httpbin.org/post',data = pload)
+    pload = {
+            'username': username, # Given Username
+            'message':input("Message:"), # Type Message
+            'datetime':datetime.now().strftime("%d/%m/%Y %H:%M:%S") #Current time with dd/mm/yyyy format
+            } 
+    r = requests.post('https://httpbin.org/post', data = pload)
     r_dictionary= r.json()
     return r_dictionary
 
