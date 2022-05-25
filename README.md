@@ -17,9 +17,9 @@ The tool should work for inputs of CSV files with single words per line and it s
 Complete Installation and then:
 1.Open Files folder and Run Subscriber.py to see the messages from each user.
 
-2.Run Publisher-1.py -> Input a Username to distinguish first user -> Type Messages.
+2.Run Publisher.py -> Input a Username to distinguish first user -> Type Messages.
 
-3.Run Publisher-1.py again for as many users you want-> Input a Username to distinguish each user -> Type Messages. 
+3.Run Publisher.py again for as many users you want-> Input a Username to distinguish each user -> Type Messages. 
 
 4.You should be able to see something Like this ->
 
